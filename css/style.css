@@ -1,12 +1,13 @@
 html body {
   margin: 0;
   background-color: black;
+  font-family: Verdana, sans-serif;
 }
 
 body {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-rows: 2fr 10fr 1fr;
 }
 
 header {
@@ -21,6 +22,10 @@ header {
   align-items: flex-start;
   justify-content: flex start;
   background-color: #3de07e;
+}
+
+header img {
+  padding: 25px;
 }
 
 main {
@@ -114,7 +119,19 @@ main {
 
 footer {
   display: flex;
-  background-color: rgb(65, 65, 65);
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: rgb(71, 71, 71);
+  color: white;
+  padding-top: 54px;
   grid-column: 1/4;
   grid-row: 3/3;
+}
+
+footer h1 {
+  font-size: 32px;
+}
+
+footer p {
+  font-size: 18px;
 }
